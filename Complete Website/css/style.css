@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+:root{
+    /* For Color */
+    --black:#000;
+    --red:rgba(255,0,0,1);
+   --crimson:#e63946;
+   --smoke:#edf6f9;
+   --blue:#03045e;
+   --sky:#0096c7;
+   --gold:gold;
+   --darkorange:#f77f00;
+   --brown:#774936;
+   --deeppink:#ff006e;
+   --violent:8338ec;
+   --yellow:#ffff3f;
+   --pink:#e500a4;
+   --gray:#5c677d;
+   --lightdark:#414535;
+    /* For Font family */
+
+    --poppins:"poppins",sans-serif;
+    --roboto:'Roboto', sans-serif;
+    --lato:'Lato', sans-serif;
+    --noto:'Noto Sans', sans-serif;
+}
+a{
+    text-decoration:none;
+    color:#000;
+    font-family:var(--poppins);
+    font-size:1.2rem;
+    transition:0.2s;
+
+}
+a:hover{
+    color:var(--gold);
+}
+ul{
+    list-style:none;
+}
+
+header {
+    background-color: var(--lightdark);
+    cursor: pointer;
+
+  
+}
+#heading{
+    display: flex;
+    width:80%;
+    margin:auto;
+    justify-content: space-between;
+    padding:1rem;
+}
+.heading-nav nav a{
+   padding:1.8rem 1rem;
+}
+.socialmedia-icons i{
+    padding:0rem 0.8rem;
+    color:var(--gray);
+}
+/* Working of top heading has been Completed */
+
+#navigation{
+    background-color: var(--crimson);
+    position: relative;
+}
+.second-nav{
+    display: flex;
+width:90%;
+margin:auto;
+justify-content: space-between;
+align-items: center;
+}
+.logo{
+   
+    
+    display: block;
+}
+.navbar  ul {
+    display:flex;
+    position: relative;
+  
+}
+.navbar ul li{
+    padding:0px 20px;
+}
+.navbar ul li a{
+    position: relative;
+
+}
+.navbar ul li a::after{
+    display: block;
+    content:"";
+    position:absolute;
+    top:100%;left:0px;
+    width:0%;
+    background-color: var(--darkorange);
+    height:3px;
+    transition:all 0.5s linear;
+}
+.navbar ul li a::before{
+    display: block;
+    content:"";
+    position:absolute;
+    top:100%;
+    right:0px;
+    width:0%;
+    background-color: var(--darkorange);
+    height:3px;
+    transition:all 0.5s linear;
+}
+.navbar ul li a:hover::after,.navbar ul li a:hover::before{
+    width:100%;
+}
+.bars{
+    position: absolute;
+    right:0.9rem;
+    top:1.6rem;
+    display: none;
+   
+}
+.fa-bars{
+    font-size: 1.8rem;
+}
+
+/* Working of Navbar Section has been Completed */
+
+
+
+/* Work of landing page has been Started */
+
+#landingpage{
+    background-image: url(../images/code1.jpg);
+    height:90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: var(--poppins);
+}
+.landing-container{
+    position: absolute;
+    z-index:1;
+    color:#fff;
+    transform:translate(-50%,-50%);
+    left:50%;
+    top:50%;
+
+}
+blockquote h1{
+    font-size:2.3rem;
+    line-height:50px;
+    position: relative;
+    color:var(--white);
+}
+blockquote h1::after{
+    display: block;
+    content: "";
+    width:0%;
+    margin:auto;
+    height:4px;
+    right:0;
+    background-color: var(--black);
+    transition:0.5s;
+
+}
+blockquote h1:hover::after{
+    width:100%;
+}
+.btn{
+   margin-top:20px;
+   position: absolute;
+   left:30%;
+   padding:8px 10px;
+   background-color: var(--red);
+   border:none;
+   outline:none;
+   border-radius: 10px;
+   color:#fff;
+   font-family: var(--poppins);
+   font-size:1.4rem;
+   cursor: pointer;
+   transition:0.9s;
+}
+.btn:hover{
+    background-color: var(--darkorange);
+    transform:scale(0.8);
+}
+
+/* Working of landing page has been Completed */
+
+/* Working of our Coursers  has been Started*/
+
+#ourcourses{
+    margin-top:30px;
+  
+    
+    font-family: var(--poppins);
+}
+.courseheading {
+    
+    margin-bottom:40px;
+}
+
+.courseheading h1{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    color:var(--blue);
+    font-size:3rem;
+
+}
+.courseheading h1::after{
+    display: block;
+    content:"";
+    position:absolute;
+    top:100%;
+    text-align:center;
+    width:10rem;
+    margin:auto;
+    background-color: var(--darkorange);
+    height:3px;
+   
+
+}
+.courses{
+    display: flex;
+    width:90%;
+    margin: 100px auto;
+    justify-content: space-between;
+  
+}
+#courselogo{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+.coursecontain{
+    
+    margin:0px 10px;
+    text-align:center;
+   
+    width:30%;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+}
+.text{
+    margin-top:2.5rem;
+    font-family: var(--roboto);
+    font-size:1.4rem;
+    padding:16px;
+}
+.text a {
+    color:var(--brown);
+    position: relative;
+    top:20px;
+    font-size:1.4rem;
+    
+}
+.text a:hover{
+    text-decoration: underline;
+    color:var(--red);
+}
+.text .fa-caret-right{
+    padding-left:0.2rem;
+}
+
+
+/* Making a hover */
+.html{
+    background-color:var(--gold);
+}
+.csstext{
+    margin-top:10px;
+}
+.csstext a{
+    position: relative;
+    top:0px;
+}
+.css{
+    background-color: var(--pink);
+}
+.javascript{
+    background-color: var(--sky);
+}
+/* Work of learn How to has been STarted */
+
+#learnhowto{
+    font-family: var(--poppins);
+   background-color: whitesmoke;
+   margin-top:50px;
+}
+
+#learnhowto h1{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    color:var(--blue);
+    font-size:3rem;
+
+}
+#learnhowto h1::after{
+    display: block;
+    content:"";
+    position:absolute;
+    top:100%;
+    height:3px;
+    text-align:center;
+    width:10rem;
+    margin:auto;
+    background-color: var(--darkorange);
+}
+.learncontainer{
+    margin:50px auto; 
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+
+}
+.learntext{
+    width:30%;
+    
+    
+    margin:0px 10px;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+}
+.learnnavbar{
+    position: relative;
+}
+.learnimage{
+   width:100%;
+ height:350px;
+    cursor: pointer;
+}
+.learnimage img{
+    width:100%;
+    height:100%;
+   object-fit: cover;
+   filter:opacity(0.8);
+   filter: drop-shadow(1px 1px 1px rgba(255,0,0));
+  
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:0;
+    background-color: rgba(39, 201, 187, 0.6);
+    transition:all 0.5s ease;
+    overflow:hidden;
+
+}
+.learntext:hover .overlay{
+    height:100%;
+    
+}
+.imgtext{
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform:translate(-50%,-50%);
+}
+.howimgtext{
+    padding:8px 10px;
+    
+}
+
+.redirect{display: flex;
+justify-content: center;}
+.redirect button{
+    padding:8px 16px;
+    background-color:var(--sky);
+    color:var(--gray);
+    border:none;
+    outline:none;
+    border-radius:10px;
+    transition:all 0.3s linear;
+
+}
+.redirect button:hover{
+    background-color: var(--crimson);
+    transform:scale(0.9);
+}
+
+/* Section of how to do  has been Complete */
+
+/* Now Its turn For Footer Section */
+
+footer{
+    background-color: var(--lightdark);
+
+    margin-top:30px;
+    font-family: var(--poppins);
+}
+#footer{
+    width:90%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:30px;
+}
+.aboutauthor,.footernav,.followus{
+    width:30%;
+    margin:0px 8px;
+    border-right:1px solid #000;
+}
+.aboutauthor p{
+    padding:8px 0px;
+}
+.footernav{
+    border-right:none;
+}
+#footer h2{
+    border-bottom:1px solid red;
+    width:120px;
+}
+#footer h2:hover{
+    color:var(--darkorange);
+    cursor: pointer;
+}
+
+.socialmediafooter{
+   padding-top:20px;
+    display: flex;
+  
+    
+    
+}
+.socialmediafooter i{
+    padding:8px;
+    font-size:2rem;
+}
+.Navfooter{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+hr{
+    background-color: #000;
+    border:1px solid #000;
+    margin-top:20px;
+}
+.copyright{
+    text-align:center;
+}
+.copyright small{
+    font-size:1.2rem;
+}

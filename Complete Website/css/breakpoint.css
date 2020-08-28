@@ -1,0 +1,126 @@
+/* Adding a break points on this page */
+
+@media (max-width:800px){
+    html{
+        font-size:15px;
+    }
+   #heading{
+       width:100%;
+       display: flex;
+       flex-direction: column-reverse;
+       text-align:center;
+       box-sizing: border-box;
+       
+       
+   }
+   .bars{
+       display: block;
+   }
+   .heading-nav{
+       padding-top:20px;
+   }
+
+   .second-nav{
+       display:block;
+       overflow:hidden;
+   }
+   .navbar ul{
+        display: block;
+       height:0px;
+     
+       transition:all 0.4s linear;
+   }
+   .navbar ul li {
+       padding:0.9rem;
+      
+   }
+   .navbar ul li a{
+    font-size:1.4rem;
+   }
+ /* Working of Nav Section Has Been Completed */
+
+ /* Working of landing page has been Started */
+ blockquote h1{
+    font-size:1.2rem;
+    width:400px;
+    position: relative;
+  
+}
+.btn{
+   
+    background-color: var(--red);
+    border:none;
+    outline:none;
+   
+    color:#fff;
+    font-family: var(--poppins);
+    font-size:1rem;
+    cursor: pointer;
+    transition:0.9s;
+    left:20%;
+    padding:0.8rem;
+ }
+
+ /* Making a Our Courses Responsive */
+
+ .courses{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    -ms-flex-direction: column;
+   
+
+  
+}
+.coursecontain{
+    
+    margin:30px 0px;
+    text-align:center;
+   
+    width:100%;
+}
+.css{
+    background-color:var(--white);
+}
+.javascript{
+    background-color:var(--white);
+
+}
+.html{
+    background-color:var(--white);
+}
+.text{
+    width:80%;
+    margin:auto;
+}
+
+/* Work of Learn How to Has been Started */
+
+.learntext{
+    width:100%;
+    margin: 20px 0px;
+}
+.learncontainer{
+    display: flex;
+   
+    flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+}
+
+/* Footer */
+
+#footer{
+    width:100%;
+  flex-direction: column;
+  -ms-flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.aboutauthor,.footernav,.followus{
+    width:100%;
+    margin: 10px auto;
+    border-right:none;
+}
+ 
+}
